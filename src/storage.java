@@ -4,14 +4,14 @@ import java.util.Date;
 import java.util.List;
 
 public class storage {
-    private int id; // Поля; ID
-    private String title; // Заголовок
-    private String content; // Содержимое
-    private List<String> tags; // Теги (Для них юзается лист, т.к. их может быть несколько)
-    private Date date; // Дата
-    private boolean isPublished; // Статус
+    private int id; // РџРѕР»СЏ; ID
+    private String title; // Р—Р°РіРѕР»РѕРІРѕРє
+    private String content; // РЎРѕРґРµСЂР¶РёРјРѕРµ
+    private List<String> tags; // РўРµРіРё (Р”Р»СЏ РЅРёС… СЋР·Р°РµС‚СЃСЏ Р»РёСЃС‚, С‚.Рє. РёС… РјРѕР¶РµС‚ Р±С‹С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ)
+    private Date date; // Р”Р°С‚Р°
+    private boolean isPublished; // РЎС‚Р°С‚СѓСЃ
 
-    // Конструктор
+    // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     public storage(int id, String title, String content, List<String> tags, Date date, boolean isPublished) {
         this.id = id;
         this.title = title;
@@ -21,7 +21,7 @@ public class storage {
         this.isPublished = isPublished;
     }
 
-    // Геттеры/Сеттеры для каждого поля
+    // Р“РµС‚С‚РµСЂС‹/РЎРµС‚С‚РµСЂС‹ РґР»СЏ РєР°Р¶РґРѕРіРѕ РїРѕР»СЏ
     public int getId() {
         return id;
     }
@@ -70,7 +70,7 @@ public class storage {
         this.isPublished = published;
     }
 
-    // Конвертирование в json. Этот метод вызывается автоматически
+    // РљРѕРЅРІРµСЂС‚РёСЂРѕРІР°РЅРёРµ РІ json. Р­С‚РѕС‚ РјРµС‚РѕРґ РІС‹Р·С‹РІР°РµС‚СЃСЏ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё
     public String toString() {
         Gson gson = new Gson();
         return gson.toJson(this);
